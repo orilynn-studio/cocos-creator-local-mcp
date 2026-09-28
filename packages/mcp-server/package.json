@@ -1,0 +1,9 @@
+{
+  "name": "@innolotus/cocos-agent-bridge-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": { "cocos-agent-bridge-mcp": "./dist/index.js" },
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc -p tsconfig.json --noEmit" },
+  "dependencies": { "@innolotus/cocos-act-node": "file:../act-node", "@modelcontextprotocol/sdk": "^1.25.1", "zod": "^3.24.2" }
+}

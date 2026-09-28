@@ -1,0 +1,9 @@
+Cocos Creator Local MCP
+Copyright 2026 InnoLotus Pty Ltd
+
+This repository contains original InnoLotus source code and is licensed under
+the Apache License, Version 2.0.
+
+Compatibility note: Cocos Creator is a separately distributed product. This
+repository does not redistribute the Cocos Creator editor, engine source, or
+Creator type declarations. Users must obtain Cocos Creator under its own terms.

@@ -1,0 +1,12 @@
+{
+  "name": "agent-bridge",
+  "version": "0.1.0",
+  "author": "InnoLotus Pty Ltd",
+  "license": "Apache-2.0",
+  "editor": ">=3.8.8",
+  "main": "./dist/main.js",
+  "scripts": { "build": "tsc", "typecheck": "tsc --noEmit" },
+  "devDependencies": { "@cocos/creator-types": "^3.8.8", "@types/node": "^18.17.1", "typescript": "^5.8.2" },
+  "panels": { "default": { "title": "Agent Bridge", "type": "dockable", "main": "dist/panels/default", "size": { "min-width": 460, "min-height": 420, "width": 860, "height": 640 } } },
+  "contributions": { "menu": [{ "path": "i18n:menu.panel/agent-bridge", "label": "Open Agent Bridge", "message": "open-panel" }], "messages": { "open-panel": { "methods": ["openPanel"] }, "get-status": { "methods": ["getStatus"] } } }
+}
