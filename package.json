@@ -1,7 +1,7 @@
 {
   "name": "@innolotus/cocos-creator-local-mcp-workspace",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0-beta.1",
   "description": "Agent Bridge for Cocos Creator, with native ActNode and MCP interfaces.",
   "license": "Apache-2.0",
   "author": "InnoLotus Pty Ltd",
@@ -10,7 +10,8 @@
     "build": "npm run build --workspaces",
     "typecheck": "npm run build --workspace @innolotus/cocos-act-node && npm run typecheck --workspaces",
     "test": "npm run test --workspaces --if-present",
-    "check": "npm run typecheck && npm test && npm run build"
+    "check": "npm run typecheck && npm test && npm run build",
+    "package:extension": "npm run build --workspace agent-bridge && node scripts/package-extension.mjs"
   },
   "engines": { "node": ">=20" }
 }

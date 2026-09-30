@@ -1,9 +1,12 @@
 {
   "name": "@innolotus/cocos-act-node",
-  "version": "0.1.0",
+  "version": "1.0.0-beta.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "license": "Apache-2.0",
-  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc -p tsconfig.json --noEmit" }
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc -p tsconfig.json --noEmit" },
+  "dependencies": {
+    "@innolotus/ivy-act-node-protocol": "0.1.0-alpha.2"
+  }
 }

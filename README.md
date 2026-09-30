@@ -1,4 +1,4 @@
-# Cocos Creator Local MCP
+# Cocos Creator Agent Bridge
 
 Agent Bridge gives local AI agents a controlled path into an open Cocos Creator project. It exposes one Cocos action catalog through two interfaces:
 
@@ -7,9 +7,14 @@ Agent Bridge gives local AI agents a controlled path into an open Cocos Creator 
 
 Start at [START-HERE.md](START-HERE.md). The architecture and Ivy compatibility limit are in [ADR 0001](docs/04-decisions/0001-dual-action-interfaces.md).
 
-## Status
+## 1.0.0-beta.1
 
-This is an early Cocos Creator 3.8.8 prototype. The TypeScript implementation uses Ivy ActNode protocol concepts; upstream TypeScript SDK support is scaffold only, so this repository does not claim NPS transport conformance yet.
+The beta supports Cocos Creator 3.8.8 with one governed catalog of 17 actions,
+available through loopback Act HTTP and MCP Streamable HTTP. The separately
+shipped stdio MCP adapter invokes the same Creator-side Host over loopback.
+
+This is a beta: the bridge is intentionally local-only, and its native NCP
+transport remains future work. See [the beta installation guide](docs/02-guides/install-beta.md).
 
 ## License
 
